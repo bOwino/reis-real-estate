@@ -25,7 +25,7 @@ export default function RootLayout({
             <Image src={logo} width={120} height={120} alt='Company Logo' />
           </Link>
           <nav>
-            <ul className='flex flex-row gap-4 justify-end text-base font-normal'>
+            <ul className='flex flex-row gap-8 justify-end text-base font-normal'>
               <li>
                 <Link href='/'>HOME</Link>
               </li>
