@@ -25,29 +25,29 @@ export default function RootLayout({
             <Image src={logo} width={120} height={120} alt='Company Logo' />
           </Link>
           <nav>
-            <ul className='flex flex-row gap-8 justify-end text-base font-normal'>
-              <li>
+            <ul className='flex flex-row gap-8 justify-end text-base font-semibold text-gray-700'>
+              <li className='active'>
                 <Link href='/'>HOME</Link>
               </li>
-              <li>
+              <li className='nav-link'>
                 <Link href='/about'>ABOUT US</Link>
               </li>
-              <li>
+              <li className='nav-link'>
                 <Link href='#'>OUR AGENTS</Link>
               </li>
-              <li>
+              <li className='nav-link'>
                 <Link href='#'>PROPERTIES</Link>
               </li>
-              <li>
+              <li className='nav-link'>
                 <Link href='#'>GALLERY</Link>
               </li>
-              <li>
+              <li className='nav-link'>
                 <Link href='#'>BLOG</Link>
               </li>
-              <li>
+              <li className='nav-link'>
                 <Link href='#'>CONTACT US</Link>
               </li>
-              <li>
+              <li className='nav-link'>
                 <Link href='#'>SEARCH</Link>
               </li>
             </ul>
