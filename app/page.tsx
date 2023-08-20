@@ -5,10 +5,19 @@ import { MdOutlineDirectionsCar } from "react-icons/md"
 import { PiBathtub } from "react-icons/pi"
 import { BiExpand } from "react-icons/bi"
 import { FiShare2, FiHeart, FiPlus } from "react-icons/fi"
+import {
+  FaFacebookF,
+  FaDribbble,
+  FaLinkedinIn,
+  FaInstagram,
+  FaBehance,
+} from "react-icons/fa"
+import { TfiLocationPin } from "react-icons/tfi"
 import house10 from "../public/images/house10.jpg"
 import house11 from "../public/images/house11.jpg"
 import house12 from "../public/images/house12.jpg"
 import profile from "../public/images/profile.jpg"
+import logo from "../public/images/logo.png"
 
 export default function Home() {
   return (
@@ -38,7 +47,7 @@ export default function Home() {
               </label>
               <select
                 name='dropdown'
-                className='border-2 border-blue-800 rounded-lg px-2 py-2 focus:outline-none focus:ring-0 focus:ring-blue-800 focus:border-blue-800'
+                className='border-2 border-gray-400 rounded-lg px-2 py-2 focus:outline-none focus:ring-0 focus:ring-blue-800 focus:border-blue-800'
               >
                 <option value='option1'>Select your city</option>
                 <option value='option1'>Nairobi</option>
@@ -52,7 +61,7 @@ export default function Home() {
               </label>
               <select
                 name='dropdown'
-                className='border-2 border-blue-800 rounded-lg px-2 py-2 focus:outline-none focus:ring-0 focus:ring-blue-800 focus:border-blue-800'
+                className='border-2 border-gray-400 rounded-lg px-2 py-2 focus:outline-none focus:ring-0 focus:ring-blue-800 focus:border-blue-800'
               >
                 <option value='option1'>Select property type</option>
                 <option value='option1'>Apartments</option>
@@ -66,7 +75,7 @@ export default function Home() {
               </label>
               <select
                 name='dropdown'
-                className='border-2 border-blue-800 rounded-lg px-4 py-2 focus:outline-none focus:ring-0 focus:ring-blue-800 focus:border-blue-800'
+                className='border-2 border-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring-0 focus:ring-blue-800 focus:border-blue-800'
               >
                 <option value='option1'>Select rent range</option>
                 <option value='option1'>Ksh.0 - Ksh.100,000</option>
@@ -180,7 +189,7 @@ export default function Home() {
       <div className='section-four py-10 px-5'>
         <div className='text-center'>
           <h3 className='text-3xl font-bold text-gray-700'>
-            Latest Properties of Rent
+            Latest Properties for Rent
           </h3>
           <p className='text-lg text-gray-700 py-4 self-stretch'>
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
@@ -189,7 +198,7 @@ export default function Home() {
           </p>
         </div>
         <div className='flex justify-center items-center content-center gap-4 self-stretch flex-wrap p-0 md:p-4'>
-          <div className='flex flex-col border-2 rounded-md items-start gap-2 flex-1 min-w-[250px] max-w-[350px] h-[390px] p-15 md:p-2'>
+          <div className='flex flex-col border-2 rounded-xl items-start gap-2 flex-1 min-w-[250px] max-w-[350px] h-[390px] p-15 md:p-2 hover:border-blue-600 hover:cursor-pointer'>
             <Image
               src={house10}
               alt='house'
@@ -222,7 +231,7 @@ export default function Home() {
                   width={50}
                   height={50}
                   alt='profile'
-                  className='rounded-full w-10 h-10'
+                  className='rounded-full w-11 h-10'
                 />
                 <h3 className='font-medium'>Jenny Wilson</h3>
               </div>
@@ -239,7 +248,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='flex flex-col border-2 rounded-md items-start gap-2 flex-1 min-w-[250px] max-w-[350px] h-[390px] p-15 md:p-2'>
+          <div className='flex flex-col border-2 rounded-xl items-start gap-2 flex-1 min-w-[250px] max-w-[350px] h-[390px] p-15 md:p-2 hover:border-blue-600 hover:cursor-pointer'>
             <Image
               src={house11}
               alt='house'
@@ -272,7 +281,7 @@ export default function Home() {
                   width={50}
                   height={50}
                   alt='profile'
-                  className='rounded-full w-10 h-10'
+                  className='rounded-full w-11 h-10'
                 />
                 <h3 className='font-medium'>Jenny Wilson</h3>
               </div>
@@ -289,7 +298,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='flex flex-col border-2 rounded-md items-start gap-2 flex-1 min-w-[250px] max-w-[350px] h-[390px] p-15 md:p-2'>
+          <div className='flex flex-col border-2 rounded-xl items-start gap-2 flex-1 min-w-[250px] max-w-[350px] h-[390px] p-15 md:p-2 hover:border-blue-600 hover:cursor-pointer'>
             <Image
               src={house12}
               alt='house'
@@ -322,7 +331,7 @@ export default function Home() {
                   width={50}
                   height={50}
                   alt='profile'
-                  className='rounded-full w-10 h-10'
+                  className='rounded-full w-11 h-10'
                 />
                 <h3 className='font-medium'>Jenny Wilson</h3>
               </div>
@@ -337,6 +346,220 @@ export default function Home() {
                   <FiPlus className='w-5 h-5' />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className='flex justify-center mt-3'>
+          <button className='btn px-8 py-2 text-white rounded'>
+            Load more
+          </button>
+        </div>
+      </div>
+
+      <div className='section-five py-10 px-5'>
+        <div className='text-center'>
+          <h3 className='text-3xl font-bold text-gray-700'>
+            Latest Properties for Rent
+          </h3>
+          <p className='text-lg text-gray-700 py-4 self-stretch'>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia curae; Proin sodales ultrices nulla blandit
+            volutpat.
+          </p>
+        </div>
+        <div className='flex justify-center items-start content-start gap-4 self-stretch flex-wrap'>
+          <div className='card-two card7 flex flex-col items-center rounded-md justify-end gap-4 flex-1 min-w-[355px] max-w-[370px] h-[426px] p-4'>
+            <div className='card-two-details flex justify-center items-end gap-6 h-24 flex-shrink-0 self-stretch py-2'>
+              <div className='flex flex-row items-center gap-3 text-white'>
+                <TfiLocationPin className='w-5 h-5 text-white' />
+                <span>Kisumu</span>
+              </div>
+              <div className='flex flex-row items-center gap-3 text-white'>
+                <BiExpand className='w-5 h-5' />
+                <span>12000</span>
+              </div>
+            </div>
+          </div>
+          <div className='card-two card8 flex flex-col items-center rounded-md justify-end gap-4 flex-1 min-w-[355px] max-w-[370px] h-[426px] p-4'>
+            <div className='card-two-details flex justify-center items-end gap-6 h-24 flex-shrink-0 self-stretch py-2'>
+              <div className='flex flex-row items-center gap-3 text-white'>
+                <TfiLocationPin className='w-5 h-5 text-white' />
+                <span>Nairobi</span>
+              </div>
+              <div className='flex flex-row items-center gap-3 text-white'>
+                <BiExpand className='w-5 h-5' />
+                <span>12000</span>
+              </div>
+            </div>
+          </div>
+          <div className='card-two card9 flex flex-col items-center rounded-md justify-end gap-4 flex-1 min-w-[355px] max-w-[370px] h-[426px] p-4'>
+            <div className='card-two-details flex justify-center items-end gap-6 h-24 flex-shrink-0 self-stretch py-2'>
+              <div className='flex flex-row items-center gap-3 text-white'>
+                <TfiLocationPin className='w-5 h-5 text-white' />
+                <span>Washington</span>
+              </div>
+              <div className='flex flex-row items-center gap-3 text-white'>
+                <BiExpand className='w-5 h-5' />
+                <span>12000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='flex justify-center mt-3'>
+          <button className='btn px-8 py-2 text-white rounded'>
+            Load more
+          </button>
+        </div>
+      </div>
+
+      <div className='section-six py-6 px-5 flex justify-center items-start content-start gap-39 self-stretch flex-wrap'>
+        <div className='flex flex-col items-center gap-2 flex-1 max-w-[900px] p-0 md:p-10'>
+          <div className='text-center'>
+            <h3 className='text-3xl font-bold text-gray-700'>Contact us</h3>
+            <p className='text-lg text-gray-700 py-4 self-stretch'>
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia curae; Proin sodales ultrices nulla blandit
+              volutpat.
+            </p>
+          </div>
+          <div className='flex flex-col gap-3 self-stretch p-28 md:p-5 rounded-md bg-white shadow-md'>
+            <h3 className='font-semibold text-lg text-gray-900'>
+              Enquiry Form
+            </h3>
+            <p className='text-base text-gray-700'>
+              Are you looking for details about a certain property? Ask us a
+              question using the form below.
+            </p>
+            <form className='flex flex-col gap-4'>
+              <div className='flex flex-row gap-2 justify-between'>
+                <input
+                  type='text'
+                  placeholder='First name'
+                  className='p-2 w-full border-2 border-gray-400 rounded-lg focus:outline-none focus:ring-0 focus:ring-blue-600 focus:border-blue-600'
+                />
+                <input
+                  type='text'
+                  placeholder='Last name'
+                  className='p-2 w-full border-2 border-gray-400 rounded-lg focus:outline-none focus:ring-0 focus:ring-blue-600 focus:border-blue-600'
+                />
+              </div>
+              <input
+                type='email'
+                placeholder='email'
+                className='p-2 border-2 border-gray-400 rounded-lg focus:outline-none focus:ring-0 focus:ring-blue-600 focus:border-blue-600'
+              />
+              <textarea
+                placeholder='comments or questions'
+                className='p-2 h border-2 border-gray-400 rounded-lg focus:outline-none focus:ring-0 focus:ring-blue-600 focus:border-blue-600'
+              />
+              <div className='flex justify-center mt-3'>
+                <button className='btn px-10 py-2 text-white rounded'>
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div className='section-seven flex items-start self-stretch p-10'>
+        <div className='flex justify-between items-start flex-1'>
+          <div className='flex flex-col items-start gap-2 w-312 h-300'>
+            <Image src={logo} width={100} height={100} alt='Company Logo' />
+            <h3 className='font-semibold text-lg text-gray-800'>Contact Us</h3>
+            <p className='text-gray-700'>Call : +123 400 123</p>
+            <p className='text-gray-700'>
+              Praesent nulla massa, hendrerit vestibulum gravida in, feugiat
+              auctor felis.
+            </p>
+            <p className='text-gray-700'>Email: example@mail.com</p>
+            <div className='flex flex-row gap-2 items-center'>
+              <Link
+                href='/'
+                className='bg-blue-100 text-blue-700 p-3 rounded-md hover:bg-blue-200'
+              >
+                <FaFacebookF className='w-5 h-5' />
+              </Link>
+              <Link
+                href='/'
+                className='bg-blue-100 text-blue-700 p-3 rounded-md hover:bg-blue-200'
+              >
+                <FaDribbble className='w-5 h-5' />
+              </Link>
+              <Link
+                href='/'
+                className='bg-blue-100 text-blue-700 p-3 rounded-md hover:bg-blue-200'
+              >
+                <FaLinkedinIn className='w-5 h-5' />
+              </Link>
+              <Link
+                href='/'
+                className='bg-blue-100 text-blue-700 p-3 rounded-md hover:bg-blue-200'
+              >
+                <FaInstagram className='w-5 h-5' />
+              </Link>
+              <Link
+                href='/'
+                className='bg-blue-100 text-blue-700 p-3 rounded-md hover:bg-blue-200'
+              >
+                <FaBehance className='w-5 h-5' />
+              </Link>
+            </div>
+          </div>
+          <div className='flex flex-col gap-3'>
+            <h3 className='font-semibold text-gray-800 text-lg'>Features</h3>
+            <div className='text-gray-700 flex flex-col gap-3'>
+              <Link href='/' className='hover:underline'>
+                Home
+              </Link>
+              <Link href='/' className='hover:underline'>
+                Become a Host
+              </Link>
+              <Link href='/' className='hover:underline'>
+                Pricing
+              </Link>
+              <Link href='/' className='hover:underline'>
+                Blog
+              </Link>
+              <Link href='/' className='hover:underline'>
+                Contact
+              </Link>
+            </div>
+          </div>
+          <div className='flex flex-col gap-3'>
+            <h3 className='font-semibold text-gray-800 text-lg'>Company</h3>
+            <div className='text-gray-700 flex flex-col gap-3'>
+              <Link href='/' className='hover:underline'>
+                About us
+              </Link>
+              <Link href='/' className='hover:underline'>
+                Press
+              </Link>
+              <Link href='/' className='hover:underline'>
+                Contacts
+              </Link>
+              <Link href='/' className='hover:underline'>
+                Careers
+              </Link>
+              <Link href='/' className='hover:underline'>
+                Blog
+              </Link>
+            </div>
+          </div>
+          <div className='flex flex-col gap-3'>
+            <h3 className='font-semibold text-gray-800 text-lg'>
+              Team & Policies
+            </h3>
+            <div className='text-gray-700 flex flex-col gap-3'>
+              <Link href='/' className='hover:underline'>
+                Terms of service
+              </Link>
+              <Link href='/' className='hover:underline'>
+                Privacy & Policy
+              </Link>
+              <Link href='/' className='hover:underline'>
+                Security
+              </Link>
             </div>
           </div>
         </div>

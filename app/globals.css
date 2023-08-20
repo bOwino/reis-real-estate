@@ -99,10 +99,48 @@
   transform: translateX(20px);
 }
 
-.section-three {
+.section-three,
+.section-six {
   background: #edeff6;
 }
 
 .card6 {
   background: url("../public/images/house5.jpg") lightgray 50% / cover no-repeat;
+}
+
+.card7 {
+  background: linear-gradient(
+      180deg,
+      rgba(59, 77, 129, 0) 0%,
+      rgba(59, 77, 129, 0.5) 100%
+    ),
+    url("../public/images/house6.jpg") lightgray 0px 0.125px / 100% 99.941%
+      no-repeat;
+}
+.card8 {
+  background: linear-gradient(
+      180deg,
+      rgba(59, 77, 129, 0) 0%,
+      rgba(59, 77, 129, 0.5) 100%
+    ),
+    url("../public/images/house2.jpg") lightgray 0px 0.125px / 100% 99.941%
+      no-repeat;
+}
+.card9 {
+  background: linear-gradient(
+      180deg,
+      rgba(59, 77, 129, 0) 0%,
+      rgba(59, 77, 129, 0.5) 100%
+    ),
+    url("../public/images/house1.jpg") lightgray 0px 0.125px / 100% 99.941%
+      no-repeat;
+}
+.card-two:hover {
+  cursor: pointer;
+}
+.card-two-details {
+  transition: transform 800ms;
+}
+.card-two:hover .card-two-details {
+  transform: translateY(-20px);
 }
