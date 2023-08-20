@@ -98,3 +98,11 @@
 .card:hover .card-details {
   transform: translateX(20px);
 }
+
+.section-three {
+  background: #edeff6;
+}
+
+.card6 {
+  background: url("../public/images/house5.jpg") lightgray 50% / cover no-repeat;
+}
