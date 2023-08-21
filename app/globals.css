@@ -27,7 +27,7 @@
   transition: width 0.3s;
 }
 .nav-link:hover:before {
-  width: 3%;
+  width: 1.5%;
 }
 .btn {
   background-color: #4a60a1;

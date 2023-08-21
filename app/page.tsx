@@ -22,7 +22,7 @@ import logo from "../public/images/logo.png"
 export default function Home() {
   return (
     <main>
-      <div className='section-one flex flex-col items-center self-stretch py-20 px-4'>
+      <div className='section-one flex flex-col items-center self-stretch px-2 py-20 md:px-4'>
         <div className='text-center'>
           <h2 className='text-4xl font-semibold text-white'>
             Find Your Dream Home
@@ -39,9 +39,9 @@ export default function Home() {
             Sale
           </button>
         </div>
-        <div className='bg-white py-6 px-12 rounded-lg mt-6'>
-          <form className='flex flex-row items-end gap-10'>
-            <div className='flex flex-col'>
+        <div className='bg-white py-6 px-8 md:px-12 rounded-lg mt-6'>
+          <form className='flex flex-col md:flex-row md:items-end gap-4'>
+            <div className='flex flex-col w-full'>
               <label htmlFor='dropdown' className='text-lg font-semibold'>
                 Locations
               </label>
@@ -55,13 +55,13 @@ export default function Home() {
                 <option value='option1'>Kisumu</option>
               </select>
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col w-full'>
               <label htmlFor='dropdown' className='text-lg font-semibold'>
                 Property Type
               </label>
               <select
                 name='dropdown'
-                className='border-2 border-gray-400 rounded-lg px-2 py-2 focus:outline-none focus:ring-0 focus:ring-blue-800 focus:border-blue-800'
+                className='border-2 border-gray-400 rounded-lg p-2 focus:outline-none focus:ring-0 focus:ring-blue-800 focus:border-blue-800'
               >
                 <option value='option1'>Select property type</option>
                 <option value='option1'>Apartments</option>
@@ -69,7 +69,7 @@ export default function Home() {
                 <option value='option1'>Storey</option>
               </select>
             </div>
-            <div className='flex flex-col'>
+            <div className='flex flex-col w-full'>
               <label htmlFor='dropdown' className='text-lg font-semibold'>
                 Rent Range
               </label>
@@ -83,24 +83,26 @@ export default function Home() {
                 <option value='option1'>Ksh.500,001 - Ksh.1,000,000</option>
               </select>
             </div>
-            <button className='btn px-8 py-2 text-white rounded'>Search</button>
+            <button className='btn px-8 py-2 text-white rounded w-1/2 self-center md:self-auto md:w-full'>
+              Search
+            </button>
           </form>
         </div>
       </div>
 
-      <div className='section-two py-10 px-5'>
+      <div className='section-two py-10 px-3'>
         <div className='text-center'>
           <h3 className='text-3xl font-bold text-gray-700'>
             Properties By Area
           </h3>
-          <p className='text-lg text-gray-700 py-4'>
+          <p className='text-lg text-gray-700 py-4 self-stretch'>
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
             posuere cubilia curae; Proin sodales ultrices nulla blandit
             volutpat.
           </p>
         </div>
         <div className='flex flex-col items-center'>
-          <div className='grid grid-cols-3 gap-4 w-11/12'>
+          <div className='flex flex-col w-full gap-4 md:grid md:grid-cols-3 md:gap-4 md:w-11/12'>
             <div className='card card1 h-48 p-4 rounded'>
               <div className='card-details'>
                 <h3 className='font-bold text-xl text-white'>Centerville</h3>
@@ -120,7 +122,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='grid grid-cols-2 gap-4 mt-4 w-11/12'>
+          <div className='flex flex-col w-full md:grid md:grid-cols-2 gap-4 mt-4 md:w-11/12'>
             <div className='card card4 h-48 p-4 rounded'>
               <div className='card-details'>
                 <h3 className='font-bold text-xl text-white'>Hong Kong</h3>
@@ -137,7 +139,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='section-three py-10 px-5'>
+      <div className='section-three py-10 px-3'>
         <div className='text-center pb-10'>
           <h3 className='text-3xl font-bold text-gray-700'>
             Properties By Area
@@ -186,7 +188,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='section-four py-10 px-5'>
+      <div className='section-four py-10 px-3'>
         <div className='text-center'>
           <h3 className='text-3xl font-bold text-gray-700'>
             Latest Properties for Rent
@@ -198,7 +200,7 @@ export default function Home() {
           </p>
         </div>
         <div className='flex justify-center items-center content-center gap-4 self-stretch flex-wrap p-0 md:p-4'>
-          <div className='flex flex-col border-2 rounded-xl items-start gap-2 flex-1 min-w-[250px] max-w-[350px] h-[390px] p-15 md:p-2 hover:border-blue-600 hover:cursor-pointer'>
+          <div className='flex flex-col border-2 rounded-xl items-start gap-2 flex-1 min-w-[250px] max-w-[350px] h-[395px] p-2 hover:border-blue-600 hover:cursor-pointer'>
             <Image
               src={house10}
               alt='house'
@@ -248,7 +250,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='flex flex-col border-2 rounded-xl items-start gap-2 flex-1 min-w-[250px] max-w-[350px] h-[390px] p-15 md:p-2 hover:border-blue-600 hover:cursor-pointer'>
+          <div className='flex flex-col border-2 rounded-xl items-start gap-2 flex-1 min-w-[250px] max-w-[350px] h-[390px] p-2 hover:border-blue-600 hover:cursor-pointer'>
             <Image
               src={house11}
               alt='house'
@@ -298,7 +300,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='flex flex-col border-2 rounded-xl items-start gap-2 flex-1 min-w-[250px] max-w-[350px] h-[390px] p-15 md:p-2 hover:border-blue-600 hover:cursor-pointer'>
+          <div className='flex flex-col border-2 rounded-xl items-start gap-2 flex-1 min-w-[250px] max-w-[350px] h-[390px] p-2 hover:border-blue-600 hover:cursor-pointer'>
             <Image
               src={house12}
               alt='house'
@@ -356,7 +358,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='section-five py-10 px-5'>
+      <div className='section-five py-10 px-3'>
         <div className='text-center'>
           <h3 className='text-3xl font-bold text-gray-700'>
             Latest Properties for Rent
@@ -368,7 +370,7 @@ export default function Home() {
           </p>
         </div>
         <div className='flex justify-center items-start content-start gap-4 self-stretch flex-wrap'>
-          <div className='card-two card7 flex flex-col items-center rounded-md justify-end gap-4 flex-1 min-w-[355px] max-w-[370px] h-[426px] p-4'>
+          <div className='card-two card7 flex flex-col items-center rounded-md justify-end gap-4 flex-1 min-w-[355px] max-w-[370px] h-[300px] md:h-[400px] p-4'>
             <div className='card-two-details flex justify-center items-end gap-6 h-24 flex-shrink-0 self-stretch py-2'>
               <div className='flex flex-row items-center gap-3 text-white'>
                 <TfiLocationPin className='w-5 h-5 text-white' />
@@ -380,7 +382,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='card-two card8 flex flex-col items-center rounded-md justify-end gap-4 flex-1 min-w-[355px] max-w-[370px] h-[426px] p-4'>
+          <div className='card-two card8 flex flex-col items-center rounded-md justify-end gap-4 flex-1 min-w-[355px] max-w-[370px] h-[300px] md:h-[400px] p-4'>
             <div className='card-two-details flex justify-center items-end gap-6 h-24 flex-shrink-0 self-stretch py-2'>
               <div className='flex flex-row items-center gap-3 text-white'>
                 <TfiLocationPin className='w-5 h-5 text-white' />
@@ -392,7 +394,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='card-two card9 flex flex-col items-center rounded-md justify-end gap-4 flex-1 min-w-[355px] max-w-[370px] h-[426px] p-4'>
+          <div className='card-two card9 flex flex-col items-center rounded-md justify-end gap-4 flex-1 min-w-[360px] max-w-[380px] h-[300px] md:h-[400px] p-4'>
             <div className='card-two-details flex justify-center items-end gap-6 h-24 flex-shrink-0 self-stretch py-2'>
               <div className='flex flex-row items-center gap-3 text-white'>
                 <TfiLocationPin className='w-5 h-5 text-white' />
@@ -412,7 +414,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='section-six py-6 px-5 flex justify-center items-start content-start gap-39 self-stretch flex-wrap'>
+      <div className='section-six py-6 px-3 flex justify-center items-start content-start gap-39 self-stretch flex-wrap'>
         <div className='flex flex-col items-center gap-2 flex-1 max-w-[900px] p-0 md:p-10'>
           <div className='text-center'>
             <h3 className='text-3xl font-bold text-gray-700'>Contact us</h3>
@@ -422,7 +424,7 @@ export default function Home() {
               volutpat.
             </p>
           </div>
-          <div className='flex flex-col gap-3 self-stretch p-28 md:p-5 rounded-md bg-white shadow-md'>
+          <div className='flex flex-col gap-3 self-stretch p-4 md:p-5 rounded-md bg-white shadow-md'>
             <h3 className='font-semibold text-lg text-gray-900'>
               Enquiry Form
             </h3>
@@ -431,7 +433,7 @@ export default function Home() {
               question using the form below.
             </p>
             <form className='flex flex-col gap-4'>
-              <div className='flex flex-row gap-2 justify-between'>
+              <div className='flex flex-col md:flex-row gap-4 md:justify-between'>
                 <input
                   type='text'
                   placeholder='First name'
@@ -463,8 +465,8 @@ export default function Home() {
       </div>
 
       <div className='section-seven flex items-start self-stretch p-10'>
-        <div className='flex justify-between items-start flex-1'>
-          <div className='flex flex-col items-start gap-2 w-312 h-300'>
+        <div className='flex flex-col md:flex-row justify-between items-start md:flex-1 gap-8 md:gap-3'>
+          <div className='flex flex-col items-start gap-2 w-312 h-300 order-4 md:order-none'>
             <Image src={logo} width={100} height={100} alt='Company Logo' />
             <h3 className='font-semibold text-lg text-gray-800'>Contact Us</h3>
             <p className='text-gray-700'>Call : +123 400 123</p>
