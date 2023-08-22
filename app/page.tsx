@@ -464,7 +464,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='section-seven flex items-start self-stretch p-10'>
+      <div className='section-seven flex items-start self-stretch p-5 md:p-10'>
         <div className='flex flex-col md:flex-row justify-between items-start md:flex-1 gap-8 md:gap-3'>
           <div className='flex flex-col items-start gap-2 w-312 h-300 order-4 md:order-none'>
             <Image src={logo} width={100} height={100} alt='Company Logo' />

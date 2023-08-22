@@ -15,7 +15,7 @@
   width: 1.5%;
   height: 1px;
   border-bottom: 2px solid #4a60a1;
-  bottom: 25px;
+  bottom: 18px;
 }
 .nav-link:before {
   position: absolute;
@@ -23,7 +23,7 @@
   width: 0;
   height: 1px;
   border-bottom: 2px solid #4a60a1;
-  bottom: 25px;
+  bottom: 18px;
   transition: width 0.3s;
 }
 .nav-link:hover:before {
@@ -143,4 +143,18 @@
 }
 .card-two:hover .card-two-details {
   transform: translateY(-20px);
+}
+button,
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+button:focus,
+.noSelect:focus {
+  outline: none !important;
 }
