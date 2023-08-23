@@ -11,10 +11,10 @@ import { GrFormClose } from "react-icons/gr"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
-  title: "Reis Real Estate | Home",
-  description: "A real estate website",
-}
+// export const metadata: Metadata = {
+//   title: "Reis Real Estate | Home",
+//   description: "A real estate website",
+// }
 
 export default function RootLayout({
   children,
