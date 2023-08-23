@@ -2,6 +2,13 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   output: 'export',
+  serverRuntimeConfig: {
+    router: () => {
+      return new NextRouter({
+        basePath: "/",
+      });
+    },
+  },
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
